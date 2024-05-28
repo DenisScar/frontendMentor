@@ -114,9 +114,18 @@ p {
   padding: 0;
 }
 
-.content ul, .content ol {
+.content ul {
 	list-style: none;
   margin-top: 1rem;
+}
+
+.content ol {
+	margin-left: 1rem;
+}
+
+.content ol li::marker {
+	color: var(--nutmeg);
+  font-weight: bold;
 }
 
 .content ul li, .content ol li {
@@ -125,12 +134,9 @@ p {
 
 .content ul li:before {
 	content: '\2022';
+  font-size: 1.5rem;
 	color: var(--dark-raspberry);
 	margin-right: 2rem;
-}
-
-.content ol li:before {
-	color: var(--dark-raspberry);
 }
 
 table {
